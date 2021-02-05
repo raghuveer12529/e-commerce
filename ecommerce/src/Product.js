@@ -1,26 +1,31 @@
-import React from 'react'
-import './Product.css'
-import SimpleRating from './rating'
+import React from "react";
+import "./Product.css";
+import StarBorderRoundedIcon from "@material-ui/icons/StarBorderRounded";
 
-function Product() {
-    return (
-        <div className="Product">
+function Product({ title, price, image, rating }) {
+  return (
+    <div className="product">
+      <div className="product_info">
+        <p>{title}</p>
+        <p className="product__price">
+          <small>₹</small>
+          <strong>{price}</strong>
+        </p>
 
-           <div className="product_info">
-               <p>The len startup</p>
-               <p className="product__price">
-                    <small>$</small>
-                    <strong>19.99</strong>
-               </p>
-
-               <div className="product__rating">
-                    <SimpleRating />
-               </div>
-               </div> 
-
-               <img />
+        <div className="product__rating">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <StarBorderRoundedIcon />
+            ))}
         </div>
-    )
+      </div>
+
+      <img src={image} alt="" />
+
+      <button>Add to Basket</button>
+    </div>
+  );
 }
 
-export default Product
+export default Product;

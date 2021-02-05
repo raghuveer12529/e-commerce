@@ -1,33 +1,64 @@
-import React from 'react'
-import './Home.css'
-import Product from './Product'
+import React from "react";
+import "./Home.css";
+import Product from "./Product";
 
 function Home() {
-    return (
-        <div className="home">
-            <div className="home__container"> 
-                <img 
-                 className="home__image"
-                 src="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
-                 alt=""
-                 />
+  return (
+    <div className="home">
+      <div className="home__container">
+        <img
+          className="home__image"
+          src="https://wallpapercave.com/wp/wp2060641.jpg"
+          alt=""
+        />
 
-                 <div className="home__row">
-                    <Product />
-                 </div>
-
-                 <div className="home__row">
-
-                </div>
-
-                <div className="home__row">
-
-                </div>
-
-            </div>
-            
+        <div className="home__row">
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={2}
+          />
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={3}
+          />
         </div>
-    )
+
+        <div className="home__row">
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={4}
+          />
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={5}
+          />
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={2}
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            title="HUF"
+            price="19"
+            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            rating={5}
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
