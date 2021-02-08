@@ -26,7 +26,7 @@ function Product({id, title, price, image, rating }) {
         <p>{title}</p>
         <p className="product__price">
           <small>₹</small>
-          <strong>{price}</strong>
+          <strong>{parseInt(price)}</strong>
         </p>
 
         <div className="product__rating">

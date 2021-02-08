@@ -15,13 +15,13 @@ function Home() {
         <div className="home__row">
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={2}
           />
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={3}
           />
@@ -30,19 +30,19 @@ function Home() {
         <div className="home__row">
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={4}
           />
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={5}
           />
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={2}
           />
@@ -51,7 +51,7 @@ function Home() {
         <div className="home__row">
           <Product
             title="HUF"
-            price="19"
+            price={19}
             image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
             rating={5}
           />
