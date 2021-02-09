@@ -22,7 +22,7 @@ function Home() {
           <Product
             title="HUF"
             price={19}
-            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            image="https://picsum.photos/200"
             rating={3}
           />
         </div>
@@ -31,19 +31,19 @@ function Home() {
           <Product
             title="HUF"
             price={19}
-            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            image="https://picsum.photos/536/354"
             rating={4}
           />
           <Product
             title="HUF"
             price={19}
-            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            image="https://picsum.photos/id/536/354"
             rating={5}
           />
           <Product
             title="HUF"
             price={19}
-            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            image="https://picsum.photos/seed/picsum/536/354"
             rating={2}
           />
         </div>
@@ -52,7 +52,7 @@ function Home() {
           <Product
             title="HUF"
             price={19}
-            image="https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg"
+            image="https://picsum.photos/535/354"
             rating={5}
           />
         </div>
