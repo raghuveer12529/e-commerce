@@ -9,6 +9,11 @@ import { useEffect } from "react";
 import { auth } from './firebase';
 import { useStateValue } from "./StateProvider";
 import Footer from "./Footer";
+import Payment from "./Payment";
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+const promsie = loadStripe("pk_test_51IL4uQJyzeCL6zyGmJ94Vojc5Rigg4V1tdgjmeyreztfp1nfDyMT2nApiIChKmNxx9jXTZSc68PB0YI2YwsRb3Ny00dqE95HSd");
 
 function App() {
 
@@ -46,10 +51,18 @@ function App() {
             <Login />
             <Footer />
           </Route>
+
           <Route path="/checkout">
             <Header />
             <Checkout />
             <Footer />
+          </Route>
+
+          <Route path="/payment">
+            <Header />
+            <Elements stripe={promsie}>
+              <Payment />
+            </Elements>
           </Route>
 
           <Route path="/">
@@ -57,6 +70,7 @@ function App() {
             <Home />
             <Footer />
           </Route>
+
         </Switch>
       </div>
     </Router>
