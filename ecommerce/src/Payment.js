@@ -22,13 +22,15 @@ function Payment() {
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
-                url: `/payment/create?Total=${getBasketTotal(basket) * 100}`
+                url: `/payment/create?Total=${getBasketTotal(basket)}`
             });
             setCLientSecret(response.data.clientSecret);
         }
 
         getClientSecret();
     }, [basket])
+
+    console.log("the secret key is >>>", clientSecret);
 
     const stripe = useStripe();
     const elements = useElements();
